@@ -1,0 +1,12 @@
+<h1>Users page</h1>
+
+<ul>
+    {{#each users as |user|}}
+        <li>
+            <div id="user">
+                <img src="{{ user.username }}_sm.jpg" alt="{{ user.username }}">
+                <a href="/{{ user.username }}">{{ user.name.full }}</a>
+            </div>
+        </li>
+    {{/each}}
+</ul>
